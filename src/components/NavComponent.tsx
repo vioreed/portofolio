@@ -2,12 +2,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
-interface ProjectComponentProps {
+interface NavComponentProps {
     isDarkMode: boolean;
     toggleDarkMode: () => void;
 }
 
-const ProjectComponent: React.FC<ProjectComponentProps> = ({
+const NavComponent: React.FC<NavComponentProps> = ({
     isDarkMode,
     toggleDarkMode,
 }) => {
@@ -93,4 +93,4 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
     );
 };
 
-export default ProjectComponent;
+export default NavComponent;

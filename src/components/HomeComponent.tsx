@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
-import profile from "./../assets/vioreed.jpg";
+import avatar from "/assets/images/avatars/moon.webp";
 
 interface HomeComponentProps {
     isDarkMode: boolean;
@@ -11,20 +11,22 @@ interface HomeComponentProps {
 const HomeComponent: React.FC<HomeComponentProps> = ({ isDarkMode }) => {
     return (
         <div
-            className={`flex flex-col h-1/2 font-inter border-b ${isDarkMode ? "bg-[#0F162B] text-[#F8F8FB] border-[rgba(255,255,255,.15)]" : "bg-[#F8F8FB] text-[#0F162B] border-[#ced4da]"
+            className={`flex flex-col h-1/2 font-inter ${isDarkMode ? "bg-[#0F162B] text-[#F8F8FB] border-[rgba(255,255,255,.15)]" : "bg-[#F8F8FB] text-[#0F162B] border-[#ced4da]"
                 }`}
+            id="home"
         >
-            <div className="mx-96 mt-28 mb-12">
+            <div className="mx-96 mt-28">
                 {/* Profile */}
-                <div className="flex items-center justify-center mb-4">
-                    <img src={profile} className="h-40 rounded-full" alt="profile" />
+                <div className="flex items-center justify-center mb-6">
+                    <img src={avatar} className={`h-40 rounded-full `} alt="profile" />
                 </div>
                 {/* End of Profile */}
 
                 {/* Introduction */}
                 <div className="flex flex-col items-center justify-center my-4">
-                    <h1 className="text-4xl font-semibold mb-2">Predi Molana</h1>
-                    <p className="text-2xl font-regular">Full-Stack Developer</p>
+                    <h1 className="text-4xl font-semibold">Predi Molana</h1>
+                    <p className="text-2xl mb-2">Full-Stack Developer</p>
+                    <p className="text-lg">青の月</p>
                 </div>
                 {/* End of Introduction */}
 
