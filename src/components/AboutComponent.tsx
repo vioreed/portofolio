@@ -13,34 +13,38 @@ const AboutComponent: React.FC<AboutComponentProps> = ({ isDarkMode }) => {
                 }`}
             id="about"
         >
-            <div className="mx-96 mt-24">
-                {/* Header */}
-                <div className="flex flex-col items-center justify-center">
-                    <h1 className="text-3xl font-semibold mb-6">About Me</h1>
-                </div>
-                {/* End of Header */}
+            <div className="mt-12">
+                <p className={`mb-12 border-b ${isDarkMode ? "border-[rgba(255,255,255,.15)]" : "border-[#ced4da]"
+                    }`} />
+                <div className="mx-96">
+                    {/* Header */}
+                    <div className="flex flex-col items-center justify-center">
+                        <h1 className="text-3xl font-semibold mb-6">About Me</h1>
+                    </div>
+                    {/* End of Header */}
 
-                {/* Content */}
-                <div className="flex flex-col items-start justify-center text-justify">
-                    <p className="text-lg mb-4">
-                        Hello, I'm <span className="font-semibold">Predi Molana.</span>
-                    </p>
-                    <p className="text-lg mb-4">
-                        I'm a <span className="font-semibold">Full-Stack Developer</span> with 1 year of experience in the professional industry. I'm 20 years old from Central Java, <span className="font-semibold">Indonesia.</span>
-                    </p>
-                    <p className="text-lg mb-4">
-                        Over the past year, I've had the privilege of working on both the <span className="font-semibold">frontend</span> and <span className="font-semibold">backend</span> aspects of web development.
-                        This experience has equipped me with a comprehensive skill set that spans from creating user-friendly interfaces to architecting robust server-side solutions.
-                    </p>
-                    <p className="text-lg mb-4">
-                        I'm also interested in web technology, game development, and technology in general.
-                    </p>
-                    <p className="text-lg">
-                        I Love <span className="font-semibold">Arch</span> <FontAwesomeIcon icon={faHeart} size="1x" />
-                    </p>
+                    {/* Content */}
+                    <div className="flex flex-col items-start justify-center text-justify">
+                        <p className="text-lg mb-4">
+                            Hello, I'm <span className="font-semibold">Predi Molana.</span>
+                        </p>
+                        <p className="text-lg mb-4">
+                            I'm a <span className="font-semibold">Full-Stack Developer</span> with 1 year of experience in the professional industry. I'm 20 years old from Central Java, <span className="font-semibold">Indonesia.</span>
+                        </p>
+                        <p className="text-lg mb-4">
+                            Over the past year, I've had the privilege of working on both the <span className="font-semibold">frontend</span> and <span className="font-semibold">backend</span> aspects of web development.
+                            This experience has equipped me with a comprehensive skill set that spans from creating user-friendly interfaces to architecting robust server-side solutions.
+                        </p>
+                        <p className="text-lg mb-4">
+                            I'm also interested in web technology, game development, and technology in general.
+                        </p>
+                        <p className="text-lg">
+                            I Love <span className="font-semibold">Arch</span> <FontAwesomeIcon icon={faHeart} size="1x" />
+                        </p>
+                    </div>
+                    {/* End of Content */}
                 </div>
             </div>
-            {/* End of Content */}
         </div>
     );
 };
