@@ -1,0 +1,230 @@
+[
+    {
+        "thumbnail": "smk1rembang.png",
+        "logo": "logo-smk.png",
+        "name": "SMK N 1 Rembang School Website",
+        "description": "School website that provides information related to that school",
+        "tect_stacks": [
+            {
+                "type": "Monolith",
+                "stacks": ["laravel.jpg", "bootstrap.png"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": "https://smkn1rembang-pbg.sch.id/",
+        "github_link": null
+    },
+    {
+        "thumbnail": "kelulusan.png",
+        "logo": "logo-smk.png",
+        "name": "SMK N 1 Rembang School Graduation Website",
+        "description": "School Graduation website that provides information about Student Graduation",
+        "tect_stacks": [
+            {
+                "type": "Monolith",
+                "stacks": ["laravel.jpg", "bootstrap.png"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": "https://kelulusan-smk-rembang.matursoft.com",
+        "github_link": null
+    },
+    {
+        "thumbnail": "lsp.png",
+        "logo": "logo-smk.png",
+        "name": "LSP SMK N 1 Rembang",
+        "description": "LSP SMK N 1 Rembang with Admin Management, that provides information for Professional Certification Institute",
+        "tect_stacks": [
+            {
+                "type": "Monolith",
+                "stacks": ["laravel.jpg", "bootstrap.png"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": "https://kelulusan-smk-rembang.matursoft.com",
+        "github_link": null
+    },
+    {
+        "thumbnail": "salfood-landing-page.png",
+        "logo": "vue.png",
+        "name": "Salfood Landing Page",
+        "description": "Salfood Landing Page, I made this for study purposes which I do in my spare time",
+        "tect_stacks": [
+            {
+                "type": "FE",
+                "stacks": ["vue.png", "sass.png"]
+            }
+        ],
+        "demo_link": "https://salfood-myfra.netlify.app/",
+        "github_link": null
+    },
+    {
+        "thumbnail": "php-captcha-generator.png",
+        "logo": "php.png",
+        "name": "PHP Captcha Generator",
+        "description": "PHP Captcha Generator Package",
+        "tect_stacks": [
+            {
+                "type": "BE",
+                "stacks": ["php.png"]
+            }
+        ],
+        "demo_link": "https://php-captcha-generator.matursoft.com",
+        "github_link": "https://github.com/MyFRA/php-captcha-generator"
+    },
+    {
+        "thumbnail": "sikasep.png",
+        "logo": "sikasep.jpg",
+        "name": "SIKASEP | SISTEM INFORMASI KESEJAHTERAAN SOSIAL PANGANDARAN JUARA",
+        "description": "Website that provide and management data about Pangandaran regency residents",
+        "tect_stacks": [
+            {
+                "type": "Monolith",
+                "stacks": ["laravel.jpg", "bootstrap.png"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": "https://sikasep.online",
+        "github_link": null
+    },
+    {
+        "thumbnail": "ymi.png",
+        "logo": "ymi.jpg",
+        "name": "YMI | Yeong Mee International",
+        "description": "Ecommerce website with selling management using MLM (Multilevel Marketing) method",
+        "tect_stacks": [
+            {
+                "type": "Monolith",
+                "stacks": ["laravel.jpg", "bootstrap.png"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": "https://ymimonoplan.com/",
+        "github_link": null
+    },
+    {
+        "thumbnail": "gg.png",
+        "logo": "gg.png",
+        "name": "GG | Garuda Gold",
+        "description": "Website with admin dashboard that used to management about selling product & generate QR with verification",
+        "tect_stacks": [
+            {
+                "type": "FE",
+                "stacks": ["laravel.jpg", "react.png", "bootstrap.png"]
+            },
+            {
+                "type": "BE",
+                "stacks": ["laravel.jpg"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": "https://ymimonoplan.com/",
+        "github_link": null
+    },
+    {
+        "thumbnail": "bmt.png",
+        "logo": "bmt.png",
+        "name": "BMT Absensi | (Mobile App)",
+        "description": "Mobile App BMT Absensi, is an attendance app that used by BMT Company Employee (to doing attendance)",
+        "tect_stacks": [
+            {
+                "type": "Mobile",
+                "stacks": ["rn.png"]
+            },
+            {
+                "type": "BE",
+                "stacks": ["laravel.jpg"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": "https://play.google.com/store/apps/details?id=com.bmt.attendance",
+        "github_link": null
+    },
+    {
+        "thumbnail": "bmt-web.png",
+        "logo": "bmt.png",
+        "name": "BMT Absensi | (Web App)",
+        "description": "Web App BMT Absensi, is an attendance website that used by BMT Company Administrator (to monitoring data employees attendance)",
+        "tect_stacks": [
+            {
+                "type": "Web",
+                "stacks": ["react.png"]
+            },
+            {
+                "type": "BE",
+                "stacks": ["nest.svg"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": "https://play.google.com/store/apps/details?id=com.bmt.attendance",
+        "github_link": null
+    },
+    {
+        "thumbnail": "ut-survei.png",
+        "logo": "logo-ut.png",
+        "name": "SISUSAN | Decision Survey System (Universitas Terbuka)",
+        "description": "SISUSAN | Decision Survey System, is an app that used by Universitas Terbuka Purwokerto for making decision survey system",
+        "tect_stacks": [
+            {
+                "type": "FE",
+                "stacks": ["react.png"]
+            },
+            {
+                "type": "BE",
+                "stacks": ["laravel.jpg"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": "https://survei-mita.matursoft.com/",
+        "github_link": null
+    },
+    {
+        "thumbnail": "botot.jpeg",
+        "logo": "kotlin.png",
+        "name": "BOTOT",
+        "description": "BOTOT | is a trash pickup application with trash buying and selling feature",
+        "tect_stacks": [
+            {
+                "type": "Mobile",
+                "stacks": ["kotlin.png"]
+            },
+            {
+                "type": "BE",
+                "stacks": ["laravel.jpg"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": null,
+        "github_link": null
+    }
+]
