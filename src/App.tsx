@@ -4,6 +4,7 @@ import NavComponent from './components/NavComponent';
 import HomeComponent from './components/HomeComponent';
 import AboutComponent from './components/AboutComponent';
 import ProjectComponent from './components/ProjectComponent';
+import SkillComponent from './components/SkillComponent';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <HomeComponent isDarkMode={isDarkMode} />
       <AboutComponent isDarkMode={isDarkMode} />
       <ProjectComponent isDarkMode={isDarkMode} />
+      <SkillComponent isDarkMode={isDarkMode} />
     </>
   )
 }
