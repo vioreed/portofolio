@@ -1,34 +1,26 @@
 [
     {
         "name": "HTML",
-        "logo": "html.png"
+        "logo": "html.webp"
     },
     {
         "name": "CSS",
-        "logo": "css.png"
+        "logo": "css.webp"
     },
     {
         "name": "Javascript",
-        "logo": "js.png"
-    },
-    {
-        "name": "PHP",
-        "logo": "php.png"
-    },
-    {
-        "name": "Kotlin",
-        "logo": "kotlin.png"
-    },
-    {
-        "name": "SASS",
-        "logo": "sass.png"
-    },
-    {
-        "name": "NodeJS",
-        "logo": "node-js.png"
+        "logo": "js.webp"
     },
     {
         "name": "Typescript",
-        "logo": "ts.svg"
+        "logo": "ts.webp"
+    },
+    {
+        "name": "PHP",
+        "logo": "php.webp"
+    },
+    {
+        "name": "NodeJS",
+        "logo": "node-js.webp"
     }
 ]
