@@ -1,34 +1,30 @@
 [
     {
         "name": "Bootstrap",
-        "logo": "bootstrap.png"
+        "logo": "bootstrap.webp"
     },
     {
         "name": "Tailwind",
-        "logo": "tailwind.svg"
+        "logo": "tailwind.webp"
     },
     {
         "name": "Codeigniter",
-        "logo": "codeigniter.svg"
+        "logo": "codeigniter.webp"
     },
     {
         "name": "Laravel",
-        "logo": "laravel.jpg"
+        "logo": "laravel.webp"
     },
     {
         "name": "React JS",
-        "logo": "react.png"
-    },
-    {
-        "name": "React Native",
-        "logo": "rn.webp"
+        "logo": "react.webp"
     },
     {
         "name": "ExpressJS",
-        "logo": "expressjs.png"
+        "logo": "expressjs.webp"
     },
     {
         "name": "Nest JS",
-        "logo": "nest.svg"
+        "logo": "nest.webp"
     }
 ]

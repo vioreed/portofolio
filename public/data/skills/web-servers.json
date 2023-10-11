@@ -1,10 +1,10 @@
 [
     {
         "name": "Apache",
-        "logo": "apache.png"
+        "logo": "apache.webp"
     },
     {
         "name": "NGINX",
-        "logo": "nginx.svg"
+        "logo": "nginx.webp"
     }
 ]

@@ -1,14 +1,14 @@
 [
     {
         "name": "MySQL",
-        "logo": "mysql.png"
+        "logo": "mysql.webp"
     },
     {
         "name": "MariaDB",
-        "logo": "mariadb.png"
+        "logo": "mariadb.webp"
     },
     {
         "name": "PostgreSQL",
-        "logo": "postgresql.svg"
+        "logo": "postgresql.webp"
     }
 ]
