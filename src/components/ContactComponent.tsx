@@ -29,20 +29,20 @@ const ContactComponent: React.FC<ContactComponentProps> = ({ isDarkMode }) => {
                                             <div className="lg:w-6/12">
                                                 <input type="text"
                                                     placeholder="Your Name"
-                                                    className={`w-full p-4 border border-${isDarkMode ? "[rgba(255,255,255,.15)] bg-[#131d36] text-[#F8F8FB]" : "[#ced4da] text-gray-600 hover:text-[#0F162B] hover:border-[#0F162B]"} `}
+                                                    className={`w-full p-4 border border-${isDarkMode ? "[rgba(255,255,255,.15)] bg-[#131d36] text-[#F8F8FB]" : "[#ced4da]  text-gray-600 bg-[#F8F8FB]"} `}
                                                     style={{ borderRadius: "0.25rem" }} required />
                                             </div>
                                             <div className="lg:w-6/12">
                                                 <input type="email"
                                                     placeholder="Your Email"
-                                                    className={`w-full p-4 border border-${isDarkMode ? "[rgba(255,255,255,.15)] bg-[#131d36] text-[#F8F8FB]" : "[#ced4da] text-gray-600 hover:text-[#0F162B] hover:border-[#0F162B]"} `}
+                                                    className={`w-full p-4 border border-${isDarkMode ? "[rgba(255,255,255,.15)] bg-[#131d36] text-[#F8F8FB]" : "[#ced4da]  text-gray-600 bg-[#F8F8FB]"} `}
                                                     style={{ borderRadius: "0.25rem" }} required />
                                             </div>
                                         </div>
                                         <div className="flex items-center pb-6">
                                             <textarea
                                                 placeholder="Your Message"
-                                                className={`w-full p-4 h-48 border border-${isDarkMode ? "[rgba(255,255,255,.15)] bg-[#131d36] text-[#F8F8FB]" : "[#ced4da] text-gray-600 hover:text-[#0F162B] hover:border-[#0F162B]"}`}
+                                                className={`w-full p-4 h-48 border border-${isDarkMode ? "[rgba(255,255,255,.15)] bg-[#131d36] text-[#F8F8FB]" : "[#ced4da]  text-gray-600 bg-[#F8F8FB]"}`}
                                                 style={{ borderRadius: "0.25rem" }} required />
                                         </div>
                                         <div className="flex items-center justify-end pb-4">
