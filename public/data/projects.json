@@ -148,7 +148,6 @@
         "logo": "moon.webp",
         "name": "Personal Site",
         "description": "My Personal Site :)",
-        "title": "My Personal Website Github link",
         "tect_stacks": [
             {
                 "type": "FE",
