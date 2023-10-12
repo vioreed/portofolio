@@ -15,7 +15,7 @@ const HomeComponent: React.FC<HomeComponentProps> = ({ isDarkMode }) => {
                 }`}
             id="home"
         >
-            <div className="mx-96 mt-28">
+            <div className="mx-96 mt-24">
                 {/* Profile */}
                 <div className="flex items-center justify-center mb-6">
                     <img src={avatar} className={`h-40 rounded-full `} alt="profile" />

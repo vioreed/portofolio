@@ -5,7 +5,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Viewer from "react-viewer";
 
-interface AboutComponentProps {
+interface ProjectComponentProps {
     isDarkMode: boolean;
 }
 
@@ -24,7 +24,7 @@ interface PortofolioInterface {
     github_link?: string
 }
 
-const ProjectComponent: React.FC<AboutComponentProps> = ({ isDarkMode }) => {
+const ProjectComponent: React.FC<ProjectComponentProps> = ({ isDarkMode }) => {
 
     const [visible, setVisible] = useState(false);
     const [portofolios, setPortofolios] = useState<Array<PortofolioInterface>>([])
@@ -34,7 +34,7 @@ const ProjectComponent: React.FC<AboutComponentProps> = ({ isDarkMode }) => {
     })
 
     useEffect(() => {
-        Axios.get('/data/portofolios.json')
+        Axios.get('/data/projects.json')
             .then((res: any) => {
                 setPortofolios(res.data)
             })
@@ -63,7 +63,7 @@ const ProjectComponent: React.FC<AboutComponentProps> = ({ isDarkMode }) => {
                 </div>
                 {/* End of Header */}
 
-                <div className="mt-2 -mx-5 flex items-stretch flex-wrap justify-start">
+                <div className="-mx-5 flex items-stretch flex-wrap justify-start">
                     {
                         portofolios.map((portofolio) => (
                             <div className="w-full lg:w-4/12 px-5 py-5">
@@ -72,7 +72,7 @@ const ProjectComponent: React.FC<AboutComponentProps> = ({ isDarkMode }) => {
                                         <div>
                                             <img onClick={() => {
                                                 openModalViewerImage(portofolio)
-                                            }} src={`./assets/images/portofolios/${portofolio.thumbnail}`} className={`cursor-pointer h-48 ${portofolio.name != 'BOTOT' ? 'w-full object-cover object-center' : 'mx-auto'}`}
+                                            }} src={`/assets/images/portofolios/${portofolio.thumbnail}`} className={`cursor-pointer h-48 ${portofolio.name != 'BOTOT' ? 'w-full object-cover object-center' : 'mx-auto'}`}
                                                 style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
                                                 alt={portofolio.name} />
                                             <p className={`border-b ${isDarkMode ? "border-[rgba(255,255,255,.15)]" : "border-[#ced4da]"
@@ -82,7 +82,7 @@ const ProjectComponent: React.FC<AboutComponentProps> = ({ isDarkMode }) => {
                                                     <img className="w-8" src={`./assets/images/portofolio-logos/${portofolio.logo}`} alt={portofolio.name} />
                                                     <h3 className="font-semibold text-lg">{portofolio.name}</h3>
                                                 </div>
-                                                <p className="mt-5 text-sm">{portofolio.description}</p>
+                                                <p className={`mt-5 text-sm ${isDarkMode ? "text-[#95A3B9]" : "text-gray-600"}`}>{portofolio.description}</p>
                                             </div>
                                         </div>
                                         <div className="px-6 pb-6">
@@ -92,13 +92,13 @@ const ProjectComponent: React.FC<AboutComponentProps> = ({ isDarkMode }) => {
                                                         {
                                                             portofolio.tect_stacks.map((techStack) => (
                                                                 <tr>
-                                                                    <td className='pt-2 font-semibold text-gray-600 text-sm'>{techStack.type}</td>
+                                                                    <td className='pt-2 font-semibold text-sm'>{techStack.type}</td>
                                                                     <td className='pt-2 px-2 text-sm'>:</td>
                                                                     <td>
                                                                         <div className='pt-2 flex items-center gap-x-2'>
                                                                             {
                                                                                 techStack.stacks.map((stack) => (
-                                                                                    <img src={`./assets/images/stacks/${stack}`} className="w-6 rounded-lg" alt={stack} />
+                                                                                    <img src={`./assets/images/stacks/${stack}`} className="w-7 rounded-lg" alt={stack} />
                                                                                 ))
                                                                             }
                                                                         </div>
@@ -108,16 +108,16 @@ const ProjectComponent: React.FC<AboutComponentProps> = ({ isDarkMode }) => {
                                                         }
                                                     </table>
                                                 </div>
-                                                <div className={`flex items-center gap-x-2 ${isDarkMode ? "text-[#95A3B9]" : "text-[rgb(15,22,43,0.5)]"}`}>
+                                                <div className={`flex items-center gap-x-0 ${isDarkMode ? "text-[#95A3B9]" : "text-[rgb(15,22,43,0.5)]"}`}>
                                                     {
                                                         portofolio.github_link ?
-                                                            <a href={portofolio.github_link} target='_blank'>
+                                                            <a href={portofolio.github_link} target='_blank' title={portofolio.name + " Github link"}>
                                                                 <FontAwesomeIcon icon={faGithub} size="xl" className={`mx-2 ${isDarkMode ? "hover:text-[#F8F8FB]" : "hover:text-[#0F162B]"}`} />
                                                             </a> : <></>
                                                     }
                                                     {
                                                         portofolio.demo_link ?
-                                                            <a href={portofolio.demo_link} target='_blank'>
+                                                            <a href={portofolio.demo_link} target='_blank' title={portofolio.name}>
                                                                 <FontAwesomeIcon icon={faLink} size="xl" className={`mx-2 ${isDarkMode ? "hover:text-[#F8F8FB]" : "hover:text-[#0F162B]"}`} />
                                                             </a> : <></>
                                                     }

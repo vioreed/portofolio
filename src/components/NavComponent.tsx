@@ -15,16 +15,16 @@ const NavComponent: React.FC<NavComponentProps> = ({
         <div className={`flex items-center h-16 fixed top-0 left-0 w-full shadow-md ${isDarkMode ? "bg-[#0F162B] text-[#F8F8FB] border-b border-[rgba(255,255,255,.15)]" : "bg-[#F8F8FB] text-[#0F162B]"
             }`}>
             <div className="flex items-center justify-between w-full mx-96">
-                <div className="justify-start text-lg font-semibold">
+                <a href="/" className={`justify-start text-lg font-semibold cursor-pointer ${isDarkMode ? "text-[#F8F8FB] hover:text-[#64FFDA]" : "text-[#0F162B]"}`}>
                     <p>Vioreed</p>
-                </div>
+                </a>
                 <div className="justify-center">
                     <nav>
-                        <ul className="flex items-center space-x-4 text-md">
+                        <ul className="flex items-center space-x-4 text-base">
                             <li>
                                 <a
                                     href="#home"
-                                    className={`px-4 py-2 font-semibold border ${isDarkMode ? "border-[#ced4da] text-[#F8F8FB] hover:bg-[#131d36]" : "border-[#0F162B] text-[#0F162B] hover:bg-[#F0F2F5]"} `}
+                                    className={`px-4 py-2 font-semibold border-[1.5px] ${isDarkMode ? "border-[#64FFDA] text-[#64FFDA]" : "border-[#0F162B] text-[#0F162B]"} `}
                                     style={{ borderRadius: "0.25rem" }}
                                 >
                                     Home
@@ -33,7 +33,7 @@ const NavComponent: React.FC<NavComponentProps> = ({
                             <li>
                                 <a
                                     href="#about"
-                                    className={`px-4 py-2 border border-${isDarkMode ? "[rgba(255,255,255,.15)] text-[#F8F8FB]" : "[#ced4da] text-[#0F162B]"} `}
+                                    className={`px-4 py-2 border border-${isDarkMode ? "[rgba(255,255,255,.15)] text-[#F8F8FB] hover:text-[#64FFDA] hover:border-[#64FFDA]" : "[#ced4da] text-gray-600 hover:text-[#0F162B] hover:border-[#0F162B]"} `}
                                     style={{ borderRadius: "0.25rem" }}
                                 >
                                     About
@@ -42,7 +42,7 @@ const NavComponent: React.FC<NavComponentProps> = ({
                             <li>
                                 <a
                                     href="#projects"
-                                    className={`px-4 py-2 border border-${isDarkMode ? "[rgba(255,255,255,.15)] text-[#F8F8FB]" : "[#ced4da] text-[#0F162B]"} `}
+                                    className={`px-4 py-2 border border-${isDarkMode ? "[rgba(255,255,255,.15)] text-[#F8F8FB] hover:text-[#64FFDA] hover:border-[#64FFDA]" : "[#ced4da] text-gray-600 hover:text-[#0F162B] hover:border-[#0F162B]"} `}
                                     style={{ borderRadius: "0.25rem" }}
                                 >
                                     Projects
@@ -51,7 +51,7 @@ const NavComponent: React.FC<NavComponentProps> = ({
                             <li>
                                 <a
                                     href="#skills"
-                                    className={`px-4 py-2 border border-${isDarkMode ? "[rgba(255,255,255,.15)] text-[#F8F8FB]" : "[#ced4da] text-[#0F162B]"} `}
+                                    className={`px-4 py-2 border border-${isDarkMode ? "[rgba(255,255,255,.15)] text-[#F8F8FB] hover:text-[#64FFDA] hover:border-[#64FFDA]" : "[#ced4da] text-gray-600 hover:text-[#0F162B] hover:border-[#0F162B]"} `}
                                     style={{ borderRadius: "0.25rem" }}
                                 >
                                     Skills
@@ -60,7 +60,7 @@ const NavComponent: React.FC<NavComponentProps> = ({
                             <li>
                                 <a
                                     href="#achievements"
-                                    className={`px-4 py-2 border border-${isDarkMode ? "[rgba(255,255,255,.15)] text-[#F8F8FB]" : "[#ced4da] text-[#0F162B]"} `}
+                                    className={`px-4 py-2 border border-${isDarkMode ? "[rgba(255,255,255,.15)] text-[#F8F8FB] hover:text-[#64FFDA] hover:border-[#64FFDA]" : "[#ced4da] text-gray-600 hover:text-[#0F162B] hover:border-[#0F162B]"} `}
                                     style={{ borderRadius: "0.25rem" }}
                                 >
                                     Achievements
@@ -68,11 +68,11 @@ const NavComponent: React.FC<NavComponentProps> = ({
                             </li>
                             <li>
                                 <a
-                                    href="#contacts"
-                                    className={`px-4 py-2 border border-${isDarkMode ? "[rgba(255,255,255,.15)] text-[#F8F8FB]" : "[#ced4da] text-[#0F162B]"} `}
+                                    href="#contact"
+                                    className={`px-4 py-2 border border-${isDarkMode ? "[rgba(255,255,255,.15)] text-[#F8F8FB] hover:text-[#64FFDA] hover:border-[#64FFDA]" : "[#ced4da] text-gray-600 hover:text-[#0F162B] hover:border-[#0F162B]"} `}
                                     style={{ borderRadius: "0.25rem" }}
                                 >
-                                    Contacts
+                                    Contact
                                 </a>
                             </li>
                         </ul>
@@ -80,16 +80,16 @@ const NavComponent: React.FC<NavComponentProps> = ({
                 </div>
                 <div className="justify-end">
                     <button
-                        className={`px-4 py-2 border border-${isDarkMode ? "[rgba(255,255,255,.15)] text-[#F8F8FB]" : "[#ced4da] text-[#0F162B]"} `}
+                        className={`border border-${isDarkMode ? "[rgba(255,255,255,.15)] text-[#F8F8FB] hover:text-[#64FFDA] hover:border-[#64FFDA] px-2 py-1" : "[#ced4da] text-gray-600 hover:text-[#0F162B] hover:border-[#0F162B] px-[0.7rem] py-[0.3rem]"} `}
                         style={{ borderRadius: "0.25rem" }}
                         onClick={toggleDarkMode}
                     >
-                        <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
+                        <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} size="sm" />
                     </button>
                 </div>
             </div>
 
-        </div>
+        </div >
     );
 };
 
