@@ -7,6 +7,7 @@ import ProjectComponent from './components/ProjectComponent';
 import SkillComponent from './components/SkillComponent';
 import AchievementComponent from './components/AchievementComponent';
 import ContactComponent from './components/ContactComponent';
+import FooterComponent from './components/FooterComponent';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
       <SkillComponent isDarkMode={isDarkMode} />
       <AchievementComponent isDarkMode={isDarkMode} />
       <ContactComponent isDarkMode={isDarkMode} />
+      <FooterComponent isDarkMode={isDarkMode} />
     </>
   )
 }
