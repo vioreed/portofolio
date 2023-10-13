@@ -37,7 +37,7 @@ const AchievementComponent: React.FC<AchievementComponentProps> = ({ isDarkMode 
 
     return (
         <div className={`flex flex-col font-inter ${isDarkMode ? "bg-[#0F162B] text-[#F8F8FB]" : "bg-[#F8F8FB] text-[#0F162B]"}`} id="achievements">
-            <div className="mx-96 mt-24">
+            <div className="mx-4 mt-12 lg:mt-24 lg:mx-96">
                 {/* Modal Viewer */}
                 <Viewer
                     visible={visible}
@@ -52,7 +52,7 @@ const AchievementComponent: React.FC<AchievementComponentProps> = ({ isDarkMode 
                 <div className="mt-2 -mx-5 flex items-stretch flex-wrap justify-start">
                     {
                         achievements.map((achievement) => (
-                            <div className="w-full lg:w-6/12 px-5 py-5">
+                            <div className="w-full md:w-6/12 lg:w-6/12 px-5 py-5">
                                 <div className={`h-full shadow-lg border ${isDarkMode ? "bg-[#131d36] text-[#F8F8FB] border-[rgba(255,255,255,.15)]" : "bg-[#F8F8FB] text-[#0F162B]"}`} style={{ borderRadius: '10px' }}>
                                     <div className='flex flex-col justify-between h-full'>
                                         <div>
