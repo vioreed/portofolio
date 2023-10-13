@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 interface NavComponentProps {
     isDarkMode: boolean;
@@ -12,6 +12,42 @@ const NavComponent: React.FC<NavComponentProps> = ({
     toggleDarkMode,
 }) => {
     const [activePage, setActivePage] = useState<string>("home");
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const home = document.getElementById("home");
+            const about = document.getElementById("about");
+            const projects = document.getElementById("projects");
+            const skills = document.getElementById("skills");
+            const achievements = document.getElementById("achievements");
+            const contact = document.getElementById("contact");
+
+            const elements = [home, about, projects, skills, achievements, contact];
+            let activeElement = null;
+
+            for (let i = 0; i < elements.length; i++) {
+                const element = elements[i];
+                if (
+                    element &&
+                    element.getBoundingClientRect().top >= 0 &&
+                    element.getBoundingClientRect().top <= window.innerHeight / 2 &&
+                    (!activeElement || element.offsetTop < activeElement.offsetTop)
+                ) {
+                    activeElement = element;
+                }
+            }
+
+            if (activeElement) {
+                setActivePage(activeElement.id);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     const handleSetActivePage = (pageId: string) => {
         setActivePage(pageId);
