@@ -58,7 +58,7 @@ const AchievementComponent: React.FC<AchievementComponentProps> = ({ isDarkMode 
                                         <div>
                                             <img onClick={() => {
                                                 openModalViewerImage(achievement)
-                                            }} src={`/assets/images/achievements/${achievement.thumbnail}`} className={`cursor-pointer h-72 mx-auto`}
+                                            }} src={`/assets/images/achievements/${achievement.thumbnail}`} className={`cursor-pointer h-48 lg:h-72 mx-auto`}
                                                 style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }} />
                                             <p className={`border-b ${isDarkMode ? "border-[rgba(255,255,255,.15)]" : "border-[#ced4da]"
                                                 }`} />
