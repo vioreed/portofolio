@@ -84,7 +84,7 @@ const SkillComponent: React.FC<SkillComponentProps> = ({ isDarkMode }) => {
 
     return (
         <div className={`flex flex-col font-inter ${isDarkMode ? "bg-[#0F162B] text-[#F8F8FB]" : "bg-[#F8F8FB] text-[#0F162B]"}`} id="skills">
-            <div className="mx-4 mt-12 lg:mt-24 lg:mx-96">
+            <div className="mx-4 mt-24 lg:mx-96">
                 <div className="flex flex-col items-center justify-center">
                     <h1 className="text-3xl font-bold mb-6">Skills</h1>
                 </div>

@@ -8,7 +8,7 @@ const ContactComponent: React.FC<ContactComponentProps> = ({ isDarkMode }) => {
 
     return (
         <div className={`flex flex-col font-inter ${isDarkMode ? "bg-[#0F162B] text-[#F8F8FB]" : "bg-[#F8F8FB] text-[#0F162B]"}`} id="contact">
-            <div className="mx-4 my-12 lg:my-24 lg:mx-96">
+            <div className="mx-4 my-24 lg:mx-96">
                 <div className="flex flex-col items-center justify-center">
                     <h1 className="text-3xl font-bold mb-6">Contact</h1>
                 </div>
