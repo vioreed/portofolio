@@ -17,7 +17,7 @@ const FooterComponent: React.FC<FooterComponentProps> = ({
                     <p>Vioreed</p>
                 </a>
                 <p className="text-sm items-center">
-                    Made with <FontAwesomeIcon icon={faHeart} className="text-[#FB5253]" size="sm" /> by Reed | Powered by Vite + React + TS + Tailwind
+                    Made with <FontAwesomeIcon icon={faHeart} className="text-[#FB5253]" size="sm" /> by Reed | Powered by React + TypeScript + Vite
                 </p>
             </div>
         </div>
